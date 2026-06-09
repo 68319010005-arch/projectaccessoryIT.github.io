@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Gadget Hub</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            background:#f4f6f9;
+            color:#333;
+        }
+
+        /* Header */
+        header{
+            background:linear-gradient(135deg,#0077ff,#00c6ff);
+            color:white;
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        header h1{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        header p{
+            font-size:1.2rem;
+        }
+
+        /* Navigation */
+        nav{
+            background:#111;
+            padding:15px;
+            text-align:center;
+            position:sticky;
+            top:0;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#00c6ff;
+        }
+
+        /* Products */
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            padding:50px 0;
+        }
+
+        .section-title{
+            text-align:center;
+            margin-bottom:40px;
+            font-size:2rem;
+            color:#0077ff;
+        }
+
+        .products{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 5px 15px rgba(0,0,0,0.15);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:20px;
+        }
+
+        .card h3{
+            margin-bottom:10px;
+            color:#0077ff;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#0077ff;
+            color:white;
+            text-decoration:none;
+            padding:10px 18px;
+            border-radius:8px;
+            margin-top:10px;
+        }
+
+        .btn:hover{
+            background:#005ad1;
+        }
+
+        /* Footer */
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>IT Gadget Hub</h1>
+        <p>แนะนำอุปกรณ์ไอทีและเทคโนโลยีที่น่าสนใจ</p>
+    </header>
+
+    <nav>
+        <a href="#">หน้าแรก</a>
+        <a href="#products">สินค้า</a>
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+
+    <section class="container" id="products">
+        <h2 class="section-title">อุปกรณ์ไอทีแนะนำ</h2>
+
+        <div class="products">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?w=800" alt="Laptop">
+                <div class="card-content">
+                    <h3>Laptop Gaming</h3>
+                    <p>โน้ตบุ๊กประสิทธิภาพสูง เหมาะสำหรับเล่นเกมและทำงานกราฟิก</p>
+                    <a href="#" class="btn">ดูเพิ่มเติม</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800" alt="Keyboard">
+                <div class="card-content">
+                    <h3>Mechanical Keyboard</h3>
+                    <p>คีย์บอร์ดแมคคานิคอล ตอบสนองรวดเร็ว เหมาะกับเกมเมอร์</p>
+                    <a href="#" class="btn">ดูเพิ่มเติม</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1585298723682-7115561c51b7?w=800" alt="Headset">
+                <div class="card-content">
+                    <h3>Gaming Headset</h3>
+                    <p>หูฟังพร้อมไมโครโฟน ระบบเสียงรอบทิศทาง</p>
+                    <a href="#" class="btn">ดูเพิ่มเติม</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?w=800" alt="Monitor">
+                <div class="card-content">
+                    <h3>4K Monitor</h3>
+                    <p>จอภาพความละเอียดสูง สีสวยคมชัด เหมาะสำหรับงานมืออาชีพ</p>
+                    <a href="#" class="btn">ดูเพิ่มเติม</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>© 2026 IT Gadget Hub | เว็บไซต์แนะนำอุปกรณ์ไอที</p>
+    </footer>
+
+</body>
+</html>
