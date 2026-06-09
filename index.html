@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Zone - แหล่งรวมอุปกรณ์ไอทีสุดล้ำ</title>
+    <title>IT HUB - ร้านอุปกรณ์ไอทีสุดล้ำ</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -14,23 +14,24 @@
             <a href="#" class="logo"><i class="fas fa-laptop-code"></i> IT HUB</a>
             <ul class="nav-links">
                 <li><a href="#" class="active">หน้าแรก</a></li>
-                <li><a href="#">รีวิว</a></li>
-                <li><a href="#">บทความ</a></li>
-                <li><a href="#">ติดต่อเรา</a></li>
+                <li><a href="#explore">สินค้า</a></li>
+                <li class="cart-icon-wrapper" id="cart-toggle">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </li>
             </ul>
         </div>
     </nav>
 
     <header class="hero">
         <div class="hero-content">
-            <h1>อัปเดตเทรนด์ <span class="highlight">อุปกรณ์ไอที</span> รีวิวชัดเจนก่อนใคร</h1>
-            <p>รวมทุกอุปกรณ์ Gadget, PC, Gaming Gear และ Accessories ที่คุณต้องมีในปี 2026</p>
-            <a href="#explore" class="btn">สำรวจอุปกรณ์ทั้งหมด</a>
+            <h1>อัปเดตเทรนด์ <span class="highlight">อุปกรณ์ไอที</span> ช้อปง่ายในคลิกเดียว</h1>
+            <p>รวม Gadget และ Gaming Gear ระดับพรีเมียมพร้อมส่งตรงถึงบ้านคุณ</p>
+            <a href="#explore" class="btn">เลือกซื้อสินค้า</a>
         </div>
     </header>
 
     <main class="container" id="explore">
-        
         <div class="filter-container">
             <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
             <button class="filter-btn" data-filter="pc">PC & Laptop</button>
@@ -38,12 +39,35 @@
             <button class="filter-btn" data-filter="gadget">Smart Gadgets</button>
         </div>
 
-        <section class="gadget-grid" id="gadget-grid">
-            </section>
+        <section class="gadget-grid" id="gadget-grid"></section>
     </main>
 
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> รถเข็นของคุณ</h3>
+            <i class="fas fa-times close-cart" id="cart-close"></i>
+        </div>
+        <div class="cart-body" id="cart-items-container">
+            </div>
+        <div class="cart-footer">
+            <div class="total-price-box">
+                <span>ราคารวมทั้งหมด:</span>
+                <span id="cart-total-price">0 บาท</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">สั่งซื้อสินค้าเลย</button>
+        </div>
+    </div>
+
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <i class="fas fa-times close-modal" id="modal-close"></i>
+            <div class="modal-layout" id="modal-detail-content">
+                </div>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2026 IT HUB Site. All rights reserved. Create with ❤️ by Gemini</p>
+        <p>&copy; 2026 IT HUB Store. All rights reserved. Create with ❤️</p>
     </footer>
 
     <script src="script.js"></script>
